@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc-di>
+	<bean id="user" class="sc.ustc.entity.UserBean"></bean>
+	<bean id="login" class="sc.ustc.action.LoginAction">
+		<field name="userBean" bean-ref="user"></field>
+	</bean>
+	<bean id="logout" class="sc.ustc.action.Logout"></bean>
+</sc-di>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OR-MAPPINGS>
+	<JDBC>
+		<proerty>
+			<name>driver_class</name>
+			<value>com.mysql.cj.jdbc.Driver</value>
+		</proerty>
+		<proerty>
+			<name>url_path</name>
+			<value>jdbc:mysql://localhost:3306/user</value>
+		</proerty>
+		<proerty>
+			<name>db_username</name>
+			<value>root</value>
+		</proerty>
+		<proerty>
+			<name>db_userpassword</name>
+			<value>123456</value>
+		</proerty>
+	</JDBC>
+	<class>
+		<name>sc.ustc.entity.UserBean</name>
+		<table>user</table>
+		<id>
+			<name>userId</name>
+		</id>
+		<proerty>
+			<name>userName</name>
+			<column>userName</column>
+			<type>String</type>
+			<lazy>false</lazy>
+		</proerty>
+		<proerty>
+			<name>userPassword</name>
+			<column>userPassword</column>
+			<type>String</type>
+			<lazy>true</lazy>
+		</proerty>
+	</class>
+</OR-MAPPINGS>
